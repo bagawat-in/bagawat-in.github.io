@@ -39,10 +39,23 @@
     margin: 0;
 }
       .header-text {
-      font-size: 24px;
+      font-size: 50px;
       color: #000000; /* Black text for better visibility */
     }
     
+     @media screen and (max-width: 600px) {
+      header {
+        padding: 5px; /* Adjust the padding for smaller screens */
+      }
+
+      .header-text {
+        font-size: 24px; /* Adjust the font size for smaller screens */
+      }
+
+      .container {
+        margin-top: 60px; /* Adjust the top margin to account for the smaller header */
+      }
+    }
   </style>
 </head>
 <body>
