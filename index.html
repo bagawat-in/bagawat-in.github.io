@@ -41,6 +41,11 @@
         text-decoration: none;
     }
     
+    .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
      
      @media only screen and (max-width: 600px) {
      
@@ -54,12 +59,28 @@
   </style>
 </head>
 <body>
-  <header> 
+  <div class="header" id="myHeader">
+ 
       <a class="header-text" href="https://bagawat-in.github.io/">BAGāWAT</a>
-  </header>
+  </div>
  
      <div>
     <img class="main-image" src="assets/main.png" alt="Bird">
     
  </div>
+  
+  <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </body>
