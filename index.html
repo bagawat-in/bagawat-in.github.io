@@ -24,6 +24,21 @@
       font-size: 24px;
     }
     
+    .marquee {  
+    overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+    @keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
     .main-image {
       max-width: 40%;
       height: auto;
@@ -77,9 +92,7 @@
   margin-right: auto;
       margin-top: 150px;
     }
-       .marquee {
-         font-size: 10px;
-       }
+      
        
  .header-logo1 {
         margin-bottom: 0px; 
@@ -132,8 +145,10 @@ function myFunction() {
 }
 </script>
   <footer>
-  <marquee loop="100" behavior="sliding" direction="left" height="100px">
-This is a sample scrolling text that has scrolls texts to the right.
-</marquee>
+  <div class="marquee">
+  <div class="track">
+    <div class="content">&nbsp;Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence Infinite Marquee with long sentence</div>
+  </div>
+</div>
     </footer>
 </body>
