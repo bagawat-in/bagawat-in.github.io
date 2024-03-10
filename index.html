@@ -10,7 +10,16 @@
             position: absolute;
             cursor: move;
         }
+
+    #image1 {
+    width: 800px;
+    }
     
+ @media only screen and (max-width: 600px) {  
+   #image1 {
+    width: 400px;
+    }
+ }
   #grad1 {
   height: 2200px;
       width: 100% !important;
@@ -291,7 +300,7 @@ function myFunction() {
 }
 </script>
 
-  <img id="image1" class="draggable" src="assets/snake.png" style="top: 300px; left: 300px;" width="800">
+  <img id="image1" class="draggable" src="assets/snake.png" style="top: 900px; left: 300px;">
 
     <script>
         // Make images draggable
