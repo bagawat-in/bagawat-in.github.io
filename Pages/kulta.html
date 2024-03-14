@@ -9,13 +9,40 @@
         body {
             background-color: #CFFF04; 
         }
+        
+.marquee-container {
+  position: relative;
+  width: 100%;
+}
+
+.marquee-text {
+  font-size: 24px; /* Adjust as needed */
+}
+
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.marquee-container:hover .hover-image {
+  display: block;
+}
 
     
     </style>
 </head>
 
 <body>
-    <img src="assets/kultabg.png" alt="kulta" width="1000" top="50">
+
+    <div class="marquee-container">
+    <marquee class="marquee-text" behavior="scroll" direction="left">
+Mayawati's political odyssey has been rife with trials and controversies, drawing relentless scrutiny from detractors dissecting her leadership methodology and decisions. In a political arena traditionally commandeered by upper caste males, Mayawati's assertive and authoritative demeanour has not escaped censure, with some decrying the alleged fostering of a personality cult within the Bahujan Samaj Party (BSP).
+</marquee>
+    <img src="assets/kulta.png" alt="kulta" class="hover-image">
+  </div>
+    
      
 </body>
 
