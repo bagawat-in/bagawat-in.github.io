@@ -1,50 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kulta</title>
-    <style>
-        body {
-            background-color: #CFFF04; 
-        }
-        
-.marquee-container {
-  position: relative;
-  width: 100%;
-}
-
-.marquee-text {
-  font-size: 24px; /* Adjust as needed */
-}
-
-.hover-image {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.marquee-container:hover .hover-image {
-  display: block;
-}
-
-    
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kulta</title>
+<style>
+  body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .blink-container {
+    position: relative;
+  }
+  .blink-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: blink-animation 2s infinite;
+  }
+  @keyframes blink-animation {
+    0%, 50% { opacity: 0; }
+    51%, 100% { opacity: 1; }
+  }
+</style>
 </head>
-
 <body>
-
-    <div class="marquee-container">
-    <marquee class="marquee-text" behavior="scroll" direction="left">
-Mayawati's political odyssey has been rife with trials and controversies, drawing relentless scrutiny from detractors dissecting her leadership methodology and decisions. In a political arena traditionally commandeered by upper caste males, Mayawati's assertive and authoritative demeanour has not escaped censure, with some decrying the alleged fostering of a personality cult within the Bahujan Samaj Party (BSP).
-</marquee>
-    <img src="assets/kulta.png" alt="kulta" class="hover-image">
+  <div class="blink-container">
+    <img src="b1.png" alt="Mayawati" class="blink-image">
+    <img src="b2.png" alt="Mayawati" class="blink-image">
   </div>
-    
-     
 </body>
-
 </html>
-
