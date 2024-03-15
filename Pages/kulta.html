@@ -15,16 +15,27 @@
     align-items: center;
     height: 100vh;
   }
-  img {
-    width: 60%;
+  .blink-container {
+    position: relative;
   }
-   
+  .blink-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: blink-animation 2s infinite;
+  }
+  @keyframes blink-animation {
+    0%, 50% { opacity: 0; }
+    51%, 100% { opacity: 1; }
+  }
 </style>
 </head>
 <body>
   <div class="blink-container">
-    <img src="assets/b1.png" alt="Mayawati"> 
-    <img src="assets/b2.png" alt="Mayawati">
+    <img src="assets/b1.png" alt="Mayawati" class="blink-image">
+    <img src="assets/b2.png" alt="Mayawati" class="blink-image">
   </div>
 </body>
 </html>
