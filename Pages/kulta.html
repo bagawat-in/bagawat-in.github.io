@@ -6,7 +6,9 @@
 <title>Kulta</title>
 <style>
   body {
-    background-color: black;
+    background-color: white;
+     background-image: url("assets/kulta.png");
+  background-repeat: repeat;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -15,20 +17,7 @@
     align-items: center;
     height: 100vh;
   }
-  .blink-container {
-    position: relative;
-  }
-  .blink-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    animation: blink-animation 2s infinite;
-  }
-  @keyframes blink-animation {
-    0%, 50% { opacity: 0; }
-    51%, 100% { opacity: 1; }
-  }
+ 
 </style>
 </head>
 <body>
